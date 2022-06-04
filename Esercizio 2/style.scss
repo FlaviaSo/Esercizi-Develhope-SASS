@@ -1,0 +1,55 @@
+@mixin esempio($color: red, $border-color: green, $font-size: 20px) {
+    border: 1px solid $border-color;
+    color: $color;
+    font-size: $font-size;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px;
+
+    h1{
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    }
+
+    .big {
+        display: flex;
+
+        article{
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                width: 80%;
+            }
+        }
+
+        .red {
+            @include esempio($font-size: 12px);
+        }
+
+        .blue {
+            @include esempio($color: blue, $font-size: 12px);
+        }
+
+    }
+
+    .small {
+        width: 100%;
+        article {
+            display: flex;
+            justify-content: center;
+            @include esempio($color: green, $border-color: blue)
+        }
+    }
+
+}

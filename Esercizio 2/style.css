@@ -1,0 +1,77 @@
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+div h1 {
+  color: green;
+  text-decoration: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+}
+
+div .big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div .big article {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div .big article p {
+  width: 80%;
+}
+
+div .big .red {
+  border: 1px solid green;
+  color: red;
+  font-size: 12px;
+}
+
+div .big .blue {
+  border: 1px solid green;
+  color: blue;
+  font-size: 12px;
+}
+
+div .small {
+  width: 100%;
+}
+
+div .small article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid blue;
+  color: green;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
