@@ -1,0 +1,25 @@
+@mixin bounce ($name, $timing-function, $iteration, $duration, $start: 0, $peak: -30px) {
+
+    animation-name: $name;
+    animation-timing-function: $timing-function;
+    animation-iteration-count: $iteration;
+    animation-duration: $duration;
+
+    @keyframes bounce{
+        0% {transform: translateY($start);}
+        40% {transform: translateY($peak);}
+        60% {transform: translateY(calc($peak / 2));}
+        100% {transform: translateY($start)}
+    }
+    
+}
+    .ball{
+        margin: 150px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: rgb(18, 104, 126);
+    }
+    .bounce{
+        @include bounce(bounce, linear, infinite, 1s)
+    }
