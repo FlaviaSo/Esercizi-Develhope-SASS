@@ -28,12 +28,12 @@ div .big article p {
 div .big .red {
   border: 1px solid green;
   color: red;
-  font-size: 1rem;
+  font-size: 12px;
 }
 div .big .blue {
   border: 1px solid green;
   color: blue;
-  font-size: 1rem;
+  font-size: 12px;
 }
 div .small {
   width: 100%;
@@ -43,5 +43,5 @@ div .small article {
   justify-content: center;
   border: 1px solid blue;
   color: green;
-  font-size: 24px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@mixin esempio($color: red, $border-color: green, $font-size: 24px) {
+@mixin esempio($color: red, $border-color: green, $font-size: 20px) {
     border: 1px solid $border-color;
     color: $color;
     font-size: $font-size;
@@ -34,11 +34,11 @@ div {
         }
 
         .red {
-            @include esempio($font-size: 1rem);
+            @include esempio($font-size: 12px);
         }
 
         .blue {
-            @include esempio($color: blue, $font-size: 1rem);
+            @include esempio($color: blue, $font-size: 12px);
         }
 
     }
