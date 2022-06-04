@@ -1,0 +1,43 @@
+$first-color: red;
+$second-color: green;
+$third-color: blue;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid $first-color;
+
+    .title{
+        color: $second-color;
+        text-decoration: underline;
+        text-decoration-color: $third-color;
+    }
+
+    section{
+        display:flex;
+        width: 100%;
+
+        article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            border: 1px solid $second-color;
+
+            p {
+                width: 80%;
+            }
+
+            .red{
+                color: $first-color;
+            }
+
+            .blue{
+                color: $third-color;
+            }
+        }
+    }
+}
