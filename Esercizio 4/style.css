@@ -2,22 +2,21 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
-  border: 1px solid red;
-  padding: 10px;
+  border: 0.0625rem solid red;
+  padding: 0.625rem;
 }
 div h1 {
   color: green;
   text-decoration: underline;
-  -webkit-text-decoration-color: blue;
-          text-decoration-color: blue;
+  text-decoration-color: blue;
 }
 div .big {
   display: flex;
 }
 div .big article {
-  height: 90px;
+  height: 5.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +25,14 @@ div .big article p {
   width: 80%;
 }
 div .big .red {
-  border: 1px solid green;
+  border: 0.0625rem solid green;
   color: red;
-  font-size: 12px;
+  font-size: 1rem;
 }
 div .big .blue {
-  border: 1px solid green;
+  border: 0.0625rem solid green;
   color: blue;
-  font-size: 12px;
+  font-size: 1rem;
 }
 div .small {
   width: 100%;
@@ -41,7 +40,9 @@ div .small {
 div .small article {
   display: flex;
   justify-content: center;
-  border: 1px solid blue;
+  border: 0.0625rem solid blue;
   color: green;
-  font-size: 20px;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

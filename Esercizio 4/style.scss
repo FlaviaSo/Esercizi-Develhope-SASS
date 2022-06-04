@@ -1,5 +1,7 @@
-@mixin esempio($color: red, $border-color: green, $font-size: 20px) {
-    border: 1px solid $border-color;
+@use 'converter.scss';
+
+@mixin esempio($color:red, $border-color: green, $font-size: converter.convert(20px)) {
+    border: converter.convert(1px) solid $border-color;
     color: $color;
     font-size: $font-size;
 }
@@ -8,10 +10,10 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:10px;
+    gap: converter.convert(10px);
     align-items: center;
-    border: 1px solid red;
-    padding: 10px;
+    border: converter.convert(1px) solid red;
+    padding: converter.convert(10px);
 
     h1{
     color: green;
@@ -23,7 +25,7 @@ div {
         display: flex;
 
         article{
-            height: 90px;
+            height: converter.convert(90px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,11 +36,11 @@ div {
         }
 
         .red {
-            @include esempio($font-size: 12px);
+            @include esempio($font-size: 1rem);
         }
 
         .blue {
-            @include esempio($color: blue, $font-size: 12px);
+            @include esempio($color: blue, $font-size: 1rem);
         }
 
     }
